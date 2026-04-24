@@ -1,50 +1,37 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import { Facebook, Instagram, Mail, MapPin } from "lucide-react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaEnvelope,
+  FaMapMarkerAlt
+} from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-blue-900 text-white pt-10 pb-6">
+    <footer className="bg-blue-900 text-white pt-12 pb-6">
 
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      {/* Top Footer */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {/* College Info */}
         <div>
-          <h3 className="text-xl font-bold mb-3">
+
+          <h3 className="text-lg md:text-xl font-bold mb-3">
             Sadana Junior College
           </h3>
 
-          <p className="text-gray-300 text-sm">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Providing quality Intermediate education with integrated coaching
             for IIT-JEE, NEET & EAMCET.
           </p>
+
         </div>
 
 
-        {/* Quick Links */}
+        {/* Streams Offered */}
         <div>
-          <h4 className="font-semibold mb-3">
-            Quick Links
-          </h4>
 
-          <div className="flex flex-col space-y-2 text-gray-300 text-sm">
-
-            <Link to="/">Home</Link>
-
-            <Link to="/about">About</Link>
-
-            <Link to="/courses">Courses</Link>
-
-            <Link to="/admissions">Admissions</Link>
-
-            <Link to="/gallery">Gallery</Link>
-
-            <Link to="/contact">Contact</Link>
-
-          </div>
-        </div>
-
-
-        {/* Courses */}
-        <div>
           <h4 className="font-semibold mb-3">
             Streams Offered
           </h4>
@@ -60,33 +47,97 @@ function Footer() {
             <span>CEC – Civils & Law Track</span>
 
           </div>
+
         </div>
 
 
         {/* Contact Info */}
         <div>
+
           <h4 className="font-semibold mb-3">
             Contact Us
           </h4>
 
-          <div className="text-gray-300 text-sm space-y-2">
+          <div className="text-gray-300 text-sm space-y-2 leading-relaxed">
 
             <p>📍 Addanki, Andhra Pradesh</p>
 
             <p>📞 +91 9876543210</p>
 
-            <p>📧 sadanajuniorcollege@gmail.com</p>
+            <p className="break-words">
+              📧 sadanajuniorcollege@gmail.com
+            </p>
 
           </div>
+
         </div>
 
       </div>
 
 
-      {/* Bottom Footer */}
-      <div className="border-t border-blue-700 mt-8 pt-4 text-center text-gray-300 text-sm">
+      {/* Social Media Section */}
+      <div className="mt-8 flex flex-wrap justify-center gap-6">
 
-        © {new Date().getFullYear()} Orchids Junior College. All rights reserved.
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
+        >
+          <FaFacebookF size={20} />
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
+        >
+          <FaInstagram size={20} />
+        </a>
+
+        {/* <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
+        >
+          <FaYoutube size={20} />
+        </a> */}
+
+        <a
+          href="mailto:sadanajuniorcollege@gmail.com"
+          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
+        >
+          <FaEnvelope size={20} />
+        </a>
+
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
+        >
+          <FaMapMarkerAlt size={20} />
+        </a>
+
+      </div>
+
+
+      {/* Divider */}
+      <div className="border-t border-blue-700 mt-6"></div>
+
+
+      {/* Bottom Footer */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-4 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm gap-2">
+
+        <p className="text-center md:text-left">
+          © {new Date().getFullYear()} Sadana Junior College. All rights reserved.
+        </p>
+
+        <p className="text-center md:text-right">
+          Designed for Excellence 🎓
+        </p>
 
       </div>
 

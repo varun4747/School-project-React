@@ -42,7 +42,7 @@ function About() {
         </h2>
 
         <p className="text-gray-600 leading-relaxed max-w-4xl mx-auto">
-          Sadana Junior College is committed to shaping students into confident
+          Govindambika Junior College is committed to shaping students into confident
           achievers through disciplined academic planning, continuous
           assessment systems, and integrated competitive exam preparation. Our
           structured methodology ensures strong conceptual clarity and excellent
