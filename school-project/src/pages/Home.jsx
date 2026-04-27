@@ -3,12 +3,16 @@ import logo from "../assets/images/logo.jpeg"
 import img1 from "../assets/images/image.png";
 import img2 from "../assets/images/image4.jpeg";
 import img3 from "../assets/images/image5.jpeg";
+import RegistrationModal from "../components/RegistrationModal";
+import ReadMoreModal from "../components/ReadMoreModal";
 
 const images = [img1, img2, img3];
 
 function Home() {
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [showModal, setShowModal] = useState(true);
+  const [showReadMore, setShowReadMore] = useState(false);
 
   useEffect(() => {
 
@@ -48,13 +52,16 @@ function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4">
 
-            <button className="bg-yellow-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
-              Admissions Open 2026–27
+            <button
+              onClick={() => setShowModal(true)}
+              className="bg-yellow-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+            >
+              Click for Admissions
             </button>
 
-            <button className="bg-white text-blue-700 px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+            {/* <button className="bg-white text-blue-700 px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
               View Courses
-            </button>
+            </button> */}
 
           </div>
 
@@ -150,7 +157,10 @@ function Home() {
             in competitive exams like IIT-JEE, NEET, and EAMCET.
           </p>
 
-          <button className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg hover:bg-blue-700 transition">
+          <button
+            onClick={() => setShowReadMore(true)}
+            className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg hover:bg-blue-700 transition"
+          >
             Read More
           </button>
 
@@ -202,14 +212,25 @@ function Home() {
           Admissions are now open for Intermediate First Year students.
         </p>
 
-        <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+        <button
+          onClick={() => setShowModal(true)}
+          className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+        >
           Apply Now
         </button>
 
       </section>
-
+      <RegistrationModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+      />
+      <ReadMoreModal
+        isOpen={showReadMore}
+        onClose={() => setShowReadMore(false)}
+      />
     </div>
   );
+
 }
 
 export default Home;
