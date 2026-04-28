@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/School-project-React/static/css/main.63a23656.css",
+    "main.js": "/School-project-React/static/js/main.39a8fd85.js",
+    "static/media/image.png": "/School-project-React/static/media/image.b2158615510601a22b8d.png",
+    "static/media/image5.jpeg": "/School-project-React/static/media/image5.e10369e8b26e01368ada.jpeg",
+    "static/media/logo1.jpeg": "/School-project-React/static/media/logo1.3ceb56fdca093d01a71e.jpeg",
+    "static/media/logo.jpeg": "/School-project-React/static/media/logo.c070913c65591daa0409.jpeg",
+    "static/media/image4.jpeg": "/School-project-React/static/media/image4.535c755787a548156a40.jpeg",
+    "index.html": "/School-project-React/index.html",
+    "main.63a23656.css.map": "/School-project-React/static/css/main.63a23656.css.map",
+    "main.39a8fd85.js.map": "/School-project-React/static/js/main.39a8fd85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63a23656.css",
+    "static/js/main.39a8fd85.js"
+  ]
+}
