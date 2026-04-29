@@ -12,7 +12,7 @@ import Courses from "./pages/Courses";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/School-project-React">
       <Navbar />
 
       <Routes>
