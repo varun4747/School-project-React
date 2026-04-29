@@ -42,7 +42,7 @@ function Home() {
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4 md:px-8">
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
-            Govindambika Junior College
+            Sadana Junior College
           </h1>
 
           <p className="text-base sm:text-lg md:text-2xl mb-6 max-w-3xl">

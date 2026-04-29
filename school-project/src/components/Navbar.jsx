@@ -26,7 +26,7 @@ function Navbar() {
           />
 
           <h2 className="text-sm sm:text-lg md:text-xl font-bold leading-tight">
-            Govindambika Junior College
+            Sadana Junior College
           </h2>
         </Link>
 
