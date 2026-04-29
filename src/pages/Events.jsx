@@ -3,164 +3,161 @@ function Events() {
     <div>
 
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white text-center py-16">
-        <h1 className="text-4xl font-bold mb-4">
-          School Events
+      <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-14 md:py-20 px-4">
+
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          School Events & Activities
         </h1>
 
-        <p className="text-lg max-w-2xl mx-auto">
-          Our school regularly organizes cultural, academic, and sports events
-          to encourage creativity, teamwork, and leadership skills.
+        <p className="max-w-3xl mx-auto text-base md:text-lg">
+          Orchids High School encourages students to participate in cultural,
+          academic, and sports activities that support creativity, leadership,
+          and teamwork.
         </p>
+
       </section>
 
 
-      {/* Upcoming Events Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
+      {/* Upcoming Events */}
+      <section className="max-w-7xl mx-auto px-4 md:px-6 py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
           Upcoming Events 📅
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Annual Day Celebration
-            </h3>
-            <p className="text-gray-600">
-              Cultural performances and award distribution ceremony.
-            </p>
-            <p className="text-blue-600 font-semibold mt-3">
-              March 25, 2026
-            </p>
-          </div>
+          {[
+            {
+              title: "Annual Day Celebration",
+              desc: "Cultural performances and award distribution ceremony.",
+              date: "March 25, 2026",
+            },
+            {
+              title: "Science Exhibition",
+              desc: "Students present innovative science projects.",
+              date: "April 10, 2026",
+            },
+            {
+              title: "Sports Day",
+              desc: "Track and field competitions promoting teamwork.",
+              date: "May 5, 2026",
+            },
+          ].map((event, index) => (
 
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition border-l-4 border-blue-600"
+            >
 
-          <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Science Exhibition
-            </h3>
-            <p className="text-gray-600">
-              Students present innovative science projects and experiments.
-            </p>
-            <p className="text-blue-600 font-semibold mt-3">
-              April 10, 2026
-            </p>
-          </div>
+              <h3 className="text-xl font-semibold mb-2">
+                {event.title}
+              </h3>
 
+              <p className="text-gray-600">
+                {event.desc}
+              </p>
 
-          <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Sports Day
-            </h3>
-            <p className="text-gray-600">
-              Track and field competitions promoting teamwork and fitness.
-            </p>
-            <p className="text-blue-600 font-semibold mt-3">
-              May 5, 2026
-            </p>
-          </div>
+              <p className="text-blue-700 font-semibold mt-4">
+                {event.date}
+              </p>
+
+            </div>
+
+          ))}
 
         </div>
 
       </section>
 
 
-      {/* Past Events Section */}
-      <section className="bg-gray-50 py-12">
+      {/* Past Events Gallery */}
+      <section className="bg-gray-50 py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
           Past Events Highlights 🎉
         </h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-          <div className="bg-white shadow-md rounded-xl overflow-hidden">
-            <img
-              src="https://source.unsplash.com/400x250/?school-function"
-              alt="Cultural Fest"
-              className="w-full h-48 object-cover"
-            />
+          {[
+            {
+              img: "https://source.unsplash.com/400x250/?school-cultural-event",
+              title: "Cultural Fest 2025",
+              desc: "Dance, music, and drama performances by students.",
+            },
+            {
+              img: "https://source.unsplash.com/400x250/?school-sports-day",
+              title: "Sports Meet 2025",
+              desc: "Competitive games encouraging physical fitness.",
+            },
+            {
+              img: "https://source.unsplash.com/400x250/?school-science-exhibition",
+              title: "Science Fair 2025",
+              desc: "Creative science innovations by young learners.",
+            },
+          ].map((item, index) => (
 
-            <div className="p-4">
-              <h4 className="font-semibold">
-                Cultural Fest 2025
-              </h4>
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-xl overflow-hidden group"
+            >
 
-              <p className="text-gray-600 text-sm">
-                Students performed dance, music, and drama activities.
-              </p>
+              <div className="overflow-hidden">
+
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-52 object-cover group-hover:scale-110 transition duration-500"
+                />
+
+              </div>
+
+              <div className="p-4">
+
+                <h4 className="font-semibold">
+                  {item.title}
+                </h4>
+
+                <p className="text-gray-600 text-sm">
+                  {item.desc}
+                </p>
+
+              </div>
+
             </div>
-          </div>
 
-
-          <div className="bg-white shadow-md rounded-xl overflow-hidden">
-            <img
-              src="https://source.unsplash.com/400x250/?school-sports"
-              alt="Sports Day"
-              className="w-full h-48 object-cover"
-            />
-
-            <div className="p-4">
-              <h4 className="font-semibold">
-                Sports Meet 2025
-              </h4>
-
-              <p className="text-gray-600 text-sm">
-                Competitive sports events with enthusiastic participation.
-              </p>
-            </div>
-          </div>
-
-
-          <div className="bg-white shadow-md rounded-xl overflow-hidden">
-            <img
-              src="https://source.unsplash.com/400x250/?science-fair"
-              alt="Science Fair"
-              className="w-full h-48 object-cover"
-            />
-
-            <div className="p-4">
-              <h4 className="font-semibold">
-                Science Fair 2025
-              </h4>
-
-              <p className="text-gray-600 text-sm">
-                Innovative projects presented by talented students.
-              </p>
-            </div>
-          </div>
+          ))}
 
         </div>
 
       </section>
 
 
-      {/* Annual Activities Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
+      {/* Annual Celebrations */}
+      <section className="max-w-7xl mx-auto px-4 md:px-6 py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Annual Activities
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          Annual Celebrations
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
 
-          <div className="bg-blue-100 p-6 rounded-xl font-semibold">
-            Independence Day 🇮🇳
-          </div>
+          {[
+            "Independence Day",
+            "Republic Day",
+            "Teachers Day",
+            "Children’s Day",
+          ].map((item, index) => (
 
-          <div className="bg-blue-100 p-6 rounded-xl font-semibold">
-            Republic Day
-          </div>
+            <div
+              key={index}
+              className="bg-blue-100 hover:bg-blue-200 transition p-6 rounded-xl font-semibold shadow-sm"
+            >
+              {item}
+            </div>
 
-          <div className="bg-blue-100 p-6 rounded-xl font-semibold">
-            Teachers Day
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl font-semibold">
-            Children's Day
-          </div>
+          ))}
 
         </div>
 
@@ -168,18 +165,19 @@ function Events() {
 
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white text-center py-16">
+      <section className="bg-blue-700 text-white text-center py-14 md:py-16 px-4">
 
-        <h2 className="text-3xl font-bold mb-4">
-          Participate in Our Upcoming Events
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Encourage Your Child to Explore Their Talents
         </h2>
 
-        <p className="mb-6">
-          Encourage your child to explore talents beyond academics.
+        <p className="mb-6 text-sm md:text-lg">
+          At Orchids High School, learning extends beyond classrooms through
+          exciting events and activities.
         </p>
 
-        <button className="bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
-          Register Now
+        <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+          Contact School & Register
         </button>
 
       </section>

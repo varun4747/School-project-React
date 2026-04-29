@@ -5,81 +5,84 @@ function About() {
     <div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-20">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-16 md:py-20 px-4">
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          About Sadana Junior College
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          About Orchids High School
         </h1>
 
-        <p className="text-lg max-w-3xl mx-auto mb-6">
-          Delivering excellence in Intermediate education with integrated
-          coaching for IIT-JEE, NEET & EAMCET through structured academics and
-          expert mentoring.
+        <p className="text-base md:text-lg max-w-3xl mx-auto">
+          Providing quality education that nurtures knowledge, discipline,
+          creativity, and leadership skills for building a bright future.
         </p>
 
-        <div className="flex justify-center gap-4 flex-wrap">
+        <div className="flex flex-wrap justify-center gap-3 mt-6">
+
           <span className="bg-white text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">
-            IIT-JEE Coaching
+            Smart Classrooms
           </span>
 
           <span className="bg-white text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">
-            NEET Preparation
+            Experienced Teachers
           </span>
 
           <span className="bg-white text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">
-            EAMCET Training
+            Holistic Development
           </span>
+
         </div>
 
       </section>
 
 
-      {/* Institution Overview */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
+      {/* School Overview */}
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-14 text-center">
 
-        <h2 className="text-3xl font-bold mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
           Our Institution
         </h2>
 
         <p className="text-gray-600 leading-relaxed max-w-4xl mx-auto">
-          Govindambika Junior College is committed to shaping students into confident
-          achievers through disciplined academic planning, continuous
-          assessment systems, and integrated competitive exam preparation. Our
-          structured methodology ensures strong conceptual clarity and excellent
-          board results every year.
+          Orchids High School is committed to providing a strong academic
+          foundation along with moral values, creativity, and physical
+          development. We encourage students to explore their talents and grow
+          into confident and responsible individuals.
         </p>
 
       </section>
 
 
       {/* Vision & Mission */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-14">
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-6">
 
-          <div className="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
-            <h3 className="text-2xl font-bold text-blue-700 mb-3">
+          <div className="bg-white shadow-lg rounded-xl p-6 md:p-8">
+
+            <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-3">
               Our Vision
             </h3>
 
             <p className="text-gray-600">
-              To create future engineers, doctors, administrators and business
-              leaders through quality intermediate education and strong
-              conceptual learning.
+              To inspire young learners to become confident, creative, and
+              responsible citizens through quality education and strong values.
             </p>
+
           </div>
 
 
-          <div className="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
-            <h3 className="text-2xl font-bold text-blue-700 mb-3">
+          <div className="bg-white shadow-lg rounded-xl p-6 md:p-8">
+
+            <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-3">
               Our Mission
             </h3>
 
             <p className="text-gray-600">
-              To integrate Intermediate Board syllabus with national-level
-              entrance coaching using expert faculty and continuous performance
-              monitoring systems.
+              To provide a safe and encouraging learning environment that
+              promotes academic excellence, discipline, innovation, and
+              character building.
             </p>
+
           </div>
 
         </div>
@@ -87,29 +90,28 @@ function About() {
       </section>
 
 
-      {/* Director Message */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      {/* Principal Message */}
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-14">
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
           <img
             src={principalImg}
-            alt="Director"
-            className="rounded-2xl shadow-xl"
+            alt="Principal"
+            className="rounded-xl shadow-lg w-full h-[260px] md:h-[350px] object-cover"
           />
 
           <div>
 
-            <h2 className="text-3xl font-bold mb-4">
-              Director’s Message
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Principal’s Message
             </h2>
 
             <p className="text-gray-600 leading-relaxed">
-              At Sadana Junior College, we focus on disciplined academic
-              training combined with expert mentoring to prepare students for
-              Intermediate Board examinations as well as IIT-JEE, NEET and
-              EAMCET entrance tests. Our goal is to help every student achieve
-              their dream professional career.
+              At Orchids High School, we believe every child has unique
+              potential. Our goal is to create an inspiring environment where
+              students can explore their abilities, develop confidence, and
+              achieve academic excellence along with strong moral values.
             </p>
 
           </div>
@@ -119,29 +121,29 @@ function About() {
       </section>
 
 
-      {/* Academic Strength Counters */}
-      <section className="bg-blue-700 text-white py-14">
+      {/* Achievements Section */}
+      <section className="bg-blue-700 text-white py-12">
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-4">
 
           <div>
-            <h2 className="text-4xl font-bold">25+</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">25+</h2>
             <p>Years Excellence</p>
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold">100%</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">100%</h2>
             <p>Board Results</p>
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold">500+</h2>
-            <p>Entrance Selections</p>
+            <h2 className="text-3xl md:text-4xl font-bold">1200+</h2>
+            <p>Students Strength</p>
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold">80+</h2>
-            <p>Expert Faculty</p>
+            <h2 className="text-3xl md:text-4xl font-bold">80+</h2>
+            <p>Qualified Teachers</p>
           </div>
 
         </div>
@@ -150,47 +152,60 @@ function About() {
 
 
       {/* Academic Strength Features */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Our Academic Strengths
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+          Our Strengths
         </h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
 
-          <div className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
-            Integrated Coaching
-          </div>
+          {[
+            "Smart Classrooms",
+            "Experienced Faculty",
+            "Digital Learning Support",
+            "Sports & Activities",
+            "Computer Lab",
+            "Science Laboratories",
+          ].map((feature) => (
 
-          <div className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
-            Experienced Faculty
-          </div>
+            <div
+              key={feature}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition text-center"
+            >
+              {feature}
+            </div>
 
-          <div className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
-            Weekly Performance Analysis
-          </div>
+          ))}
 
         </div>
 
       </section>
 
 
-      {/* Streams Section */}
-      <section className="py-16">
+      {/* Classes Offered */}
+      <section className="py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Streams Offered
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+          Classes Offered
         </h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
 
-          {["MPC", "BiPC", "MEC", "CEC"].map((stream) => (
+          {[
+            "Pre-Primary",
+            "Primary",
+            "Upper Primary",
+            "High School",
+          ].map((cls) => (
+
             <div
-              key={stream}
+              key={cls}
               className="bg-blue-100 rounded-xl p-6 text-center font-semibold hover:bg-blue-200 transition"
             >
-              {stream}
+              {cls}
             </div>
+
           ))}
 
         </div>
@@ -199,15 +214,15 @@ function About() {
 
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center py-16">
+      <section className="bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center py-14 px-4">
 
-        <h2 className="text-3xl font-bold mb-4">
-          Admissions Open 2026-27
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Admissions Open 2026–27
         </h2>
 
         <p className="mb-6">
-          Join Sadana Junior College and start your journey toward professional
-          success.
+          Join Orchids High School and give your child a strong academic
+          foundation for a bright future.
         </p>
 
         <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">

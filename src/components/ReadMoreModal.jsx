@@ -1,6 +1,7 @@
 import React from "react";
 
 function ReadMoreModal({ isOpen, onClose }) {
+
   if (!isOpen) return null;
 
   return (
@@ -19,75 +20,105 @@ function ReadMoreModal({ isOpen, onClose }) {
           </button>
 
           <h2 className="text-xl md:text-2xl font-bold text-center">
-            About Sadana Junior College
+            About Orchids High School
           </h2>
 
         </div>
 
 
         {/* Content */}
-        <div className="p-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
+        <div className="p-5 md:p-6 space-y-5 text-gray-700 text-sm md:text-base leading-relaxed">
 
           <p>
-            Sadana Junior College provides high-quality intermediate education
-            with integrated coaching programs designed to help students succeed
-            in competitive exams like IIT-JEE, NEET, and EAMCET.
+            Orchids High School is dedicated to providing quality education that
+            supports academic excellence, discipline, creativity, and overall
+            personality development. Our mission is to nurture confident and
+            responsible students prepared for future success.
           </p>
 
+
+          {/* Vision */}
           <div>
+
             <h3 className="font-semibold text-blue-700 text-lg">
               Our Vision
             </h3>
 
             <p>
-              To provide excellent academic guidance and create future-ready
-              students with strong fundamentals and confidence.
+              To create a strong educational foundation that helps students grow
+              into knowledgeable, disciplined, and socially responsible citizens.
             </p>
+
           </div>
 
 
+          {/* Classes Offered */}
           <div>
+
             <h3 className="font-semibold text-blue-700 text-lg">
-              Courses Offered
+              Classes Offered
             </h3>
 
-            <ul className="list-disc ml-6">
-              <li>MPC – Engineering Track</li>
-              <li>BiPC – Medical Track</li>
-              <li>MEC – Commerce Track</li>
-              <li>CEC – Civil Services Foundation</li>
+            <ul className="list-disc ml-6 space-y-1">
+
+              <li>Pre-Primary Education</li>
+
+              <li>Primary School (Grades 1–5)</li>
+
+              <li>Upper Primary (Grades 6–8)</li>
+
+              <li>High School (Grades 9–10)</li>
+
             </ul>
+
           </div>
 
 
+          {/* Facilities */}
           <div>
+
             <h3 className="font-semibold text-blue-700 text-lg">
               Facilities
             </h3>
 
-            <ul className="list-disc ml-6">
-              <li>Digital classrooms</li>
-              <li>Expert faculty</li>
-              <li>Weekly exams & analysis</li>
-              <li>Study hours monitoring</li>
-              <li>Integrated coaching programs</li>
+            <ul className="list-disc ml-6 space-y-1">
+
+              <li>Smart digital classrooms</li>
+
+              <li>Well-equipped science laboratories</li>
+
+              <li>Computer education support</li>
+
+              <li>Library with learning resources</li>
+
+              <li>Sports and activity programs</li>
+
             </ul>
+
           </div>
 
 
+          {/* Achievements */}
           <div>
+
             <h3 className="font-semibold text-blue-700 text-lg">
               Achievements
             </h3>
 
-            <ul className="list-disc ml-6">
-              <li>98% board results consistently</li>
-              <li>500+ IIT / NEET selections</li>
-              <li>25+ years academic excellence</li>
+            <ul className="list-disc ml-6 space-y-1">
+
+              <li>Consistent 100% board exam results</li>
+
+              <li>Experienced and qualified teaching faculty</li>
+
+              <li>25+ years of academic excellence</li>
+
             </ul>
+
           </div>
 
 
+          {/* CTA Box */}
           <div className="bg-blue-50 p-4 rounded-lg text-center">
 
             <h4 className="font-semibold text-blue-700">
@@ -95,7 +126,8 @@ function ReadMoreModal({ isOpen, onClose }) {
             </h4>
 
             <p>
-              Apply now to secure your seat in Intermediate First Year.
+              Enroll your child today for a bright academic future at
+              Orchids High School.
             </p>
 
           </div>

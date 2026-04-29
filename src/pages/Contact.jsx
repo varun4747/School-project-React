@@ -3,56 +3,71 @@ function Contact() {
     <div>
 
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white text-center py-16">
-        <h1 className="text-4xl font-bold mb-4">
-          Contact Us
+      <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-14 md:py-20 px-4">
+
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Contact Orchids High School
         </h1>
 
-        <p className="max-w-2xl mx-auto text-lg">
-          We'd love to hear from you. Reach out to us for admissions,
-          inquiries, or general information.
+        <p className="max-w-3xl mx-auto text-base md:text-lg">
+          Reach out to us for admissions enquiries, school information, or
+          general support. Our team is happy to assist you.
         </p>
+
       </section>
 
 
-      {/* Contact Info Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
+      {/* Contact Section */}
+      <section className="max-w-7xl mx-auto px-4 md:px-6 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
 
         {/* Contact Details */}
         <div className="space-y-6">
 
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-2xl md:text-3xl font-bold">
             Get in Touch 📞
           </h2>
 
           <p className="text-gray-600">
-            Contact us through the following details or send us a message
-            using the form.
+            Parents and students can contact us through the details below or
+            send a message using the enquiry form.
           </p>
 
 
-          {/* Address */}
-          <div>
-            <h4 className="font-semibold text-lg">📍 Address</h4>
-            <p className="text-gray-600">
-              My School Campus, Main Road, Addanki, Andhra Pradesh
-            </p>
-          </div>
+          {/* Info Cards */}
+          <div className="grid sm:grid-cols-2 gap-4">
+
+            <div className="bg-blue-50 p-5 rounded-xl shadow">
+              <h4 className="font-semibold">📍 Address</h4>
+              <p className="text-gray-600 text-sm">
+                Orchids High School Campus, Addanki,
+                Andhra Pradesh
+              </p>
+            </div>
 
 
-          {/* Phone */}
-          <div>
-            <h4 className="font-semibold text-lg">📞 Phone</h4>
-            <p className="text-gray-600">+91 9876543210</p>
-          </div>
+            <div className="bg-blue-50 p-5 rounded-xl shadow">
+              <h4 className="font-semibold">📞 Phone</h4>
+              <p className="text-gray-600 text-sm">
+                +91 9876543210
+              </p>
+            </div>
 
 
-          {/* Email */}
-          <div>
-            <h4 className="font-semibold text-lg">📧 Email</h4>
-            <p className="text-gray-600">
-              myschool@gmail.com
-            </p>
+            <div className="bg-blue-50 p-5 rounded-xl shadow">
+              <h4 className="font-semibold">📧 Email</h4>
+              <p className="text-gray-600 text-sm break-words">
+                orchidshighschool@gmail.com
+              </p>
+            </div>
+
+
+            <div className="bg-blue-50 p-5 rounded-xl shadow">
+              <h4 className="font-semibold">🕒 Working Hours</h4>
+              <p className="text-gray-600 text-sm">
+                Mon – Sat : 9:00 AM – 5:00 PM
+              </p>
+            </div>
+
           </div>
 
 
@@ -63,7 +78,7 @@ function Contact() {
               Follow Us 🌐
             </h4>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
 
               <a
                 href="https://facebook.com"
@@ -83,6 +98,13 @@ function Contact() {
                 Instagram
               </a>
 
+              <a
+                href="mailto:orchidshighschool@gmail.com"
+                className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+              >
+                Email
+              </a>
+
             </div>
 
           </div>
@@ -91,37 +113,55 @@ function Contact() {
 
 
         {/* Contact Form */}
-        <div className="bg-white shadow-lg rounded-xl p-6">
+        <div className="bg-white shadow-xl rounded-2xl p-6 md:p-8">
 
-          <h2 className="text-2xl font-bold mb-4">
-            Send Message ✉️
+          <h2 className="text-2xl font-bold mb-5">
+            Admission Enquiry Form ✉️
           </h2>
 
           <form className="space-y-4">
 
             <input
               type="text"
-              placeholder="Your Name"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Student Name"
+              className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             />
 
             <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              placeholder="Parent Name"
+              className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             />
+
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+
+            <select
+              className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+            >
+              <option>Select Class Applying For</option>
+              <option>Pre-Primary</option>
+              <option>Primary (1–5)</option>
+              <option>Upper Primary (6–8)</option>
+              <option>High School (9–10)</option>
+            </select>
+
 
             <textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             ></textarea>
+
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-              Send Message
+              Submit Enquiry
             </button>
 
           </form>
@@ -132,20 +172,19 @@ function Contact() {
 
 
       {/* Google Map Section */}
-      <section className="max-w-6xl mx-auto px-4 pb-16">
+      <section className="max-w-7xl mx-auto px-4 md:px-6 pb-16">
 
-        <h2 className="text-3xl font-bold text-center mb-6">
-          Our Location 🗺️
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+          Visit Our Campus 🗺️
         </h2>
 
-        <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-xl overflow-hidden shadow-xl">
 
           <iframe
             title="school-location"
             src="https://www.google.com/maps?q=Addanki,Andhra%20Pradesh&output=embed"
             width="100%"
-            height="400"
-            allowFullScreen=""
+            height="420"
             loading="lazy"
           ></iframe>
 

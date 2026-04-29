@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/images/logo1.jpeg";
+import logo from "../assets/images/schoollogo.jpg";
 
 function Navbar() {
 
@@ -26,7 +26,7 @@ function Navbar() {
           />
 
           <h2 className="text-sm sm:text-lg md:text-xl font-bold leading-tight">
-            Sadana Junior College
+            Orchids High School
           </h2>
         </Link>
 
@@ -42,16 +42,16 @@ function Navbar() {
             About
           </Link>
 
-          <Link className="hover:text-yellow-300 transition" to="/courses">
-            Courses
+          <Link className="hover:text-yellow-300 transition" to="/events">
+            Events
           </Link>
 
           <Link className="hover:text-yellow-300 transition" to="/academics">
             Academics
           </Link>
 
-          <Link className="hover:text-yellow-300 transition" to="/admissions">
-            Admissions
+          <Link className="hover:text-yellow-300 transition" to="/gallery">
+            Gallery
           </Link>
 
           <Link className="hover:text-yellow-300 transition" to="/contact">
@@ -89,16 +89,16 @@ function Navbar() {
             About
           </Link>
 
-          <Link onClick={closeMenu} to="/courses">
-            Courses
+          <Link onClick={closeMenu} to="/events">
+            Events
           </Link>
 
           <Link onClick={closeMenu} to="/academics">
             Academics
           </Link>
 
-          <Link onClick={closeMenu} to="/admissions">
-            Admissions
+          <Link onClick={closeMenu} to="/gallery">
+            Gallery
           </Link>
 
           <Link onClick={closeMenu} to="/contact">

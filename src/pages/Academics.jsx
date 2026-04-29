@@ -3,117 +3,78 @@ function Academics() {
     <div>
 
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white text-center py-16">
-        <h1 className="text-4xl font-bold mb-4">
-          Academics
+      <section className="bg-blue-800 text-white text-center py-14 md:py-20 px-4">
+
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Academics & Curriculum
         </h1>
 
-        <p className="max-w-2xl mx-auto text-lg">
-          Our academic programs focus on excellence, innovation, and holistic
-          student development through modern teaching methods.
-        </p>
-      </section>
-
-
-      {/* Curriculum Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-
-        <h2 className="text-3xl font-bold text-center mb-6">
-          Curriculum Overview 📚
-        </h2>
-
-        <p className="text-gray-600 text-center leading-relaxed">
-          Our curriculum is designed to balance academics, creativity, physical
-          education, and leadership skills. We follow a structured approach that
-          prepares students for higher education and future careers.
+        <p className="max-w-3xl mx-auto text-base md:text-lg">
+          Our academic structure is designed to provide strong foundational
+          knowledge, creativity, discipline, and overall personality development.
         </p>
 
       </section>
 
 
       {/* Classes Offered */}
-      <section className="bg-gray-50 py-12">
+      <section className="max-w-6xl mx-auto py-14 px-4 md:px-6">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
           Classes Offered
         </h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Primary School
-            </h3>
-            <p className="text-gray-600">
-              Building strong foundations through interactive learning.
-            </p>
-          </div>
+          {[
+            "Pre-Primary",
+            "Primary (1–5)",
+            "Upper Primary (6–8)",
+            "High School (9–10)",
+          ].map((cls) => (
 
+            <div
+              key={cls}
+              className="bg-blue-100 rounded-xl p-6 font-semibold hover:bg-blue-200 transition"
+            >
+              {cls}
+            </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Middle School
-            </h3>
-            <p className="text-gray-600">
-              Developing analytical thinking and subject knowledge.
-            </p>
-          </div>
-
-
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              High School
-            </h3>
-            <p className="text-gray-600">
-              Preparing students for board exams and future careers.
-            </p>
-          </div>
+          ))}
 
         </div>
 
       </section>
 
 
-      {/* Departments Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
+      {/* Subjects Section */}
+      <section className="bg-gray-100 py-14">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Academic Departments
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          Subjects We Teach
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-4">
 
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Mathematics
-          </div>
+          {[
+            "Mathematics",
+            "Science",
+            "English",
+            "Social Studies",
+            "Computer Education",
+            "General Knowledge",
+            "Physical Education",
+            "Moral Education",
+          ].map((subject) => (
 
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Science
-          </div>
+            <div
+              key={subject}
+              className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition"
+            >
+              {subject}
+            </div>
 
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            English
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Social Studies
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Computer Science
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Physical Education
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Arts & Crafts
-          </div>
-
-          <div className="bg-blue-100 p-6 rounded-xl text-center font-semibold">
-            Languages
-          </div>
+          ))}
 
         </div>
 
@@ -121,43 +82,109 @@ function Academics() {
 
 
       {/* Teaching Methodology */}
-      <section className="bg-gray-50 py-12">
+      <section className="max-w-6xl mx-auto py-14 px-4 md:px-6">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Teaching Methodology 👨‍🏫
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          Our Teaching Methodology
         </h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            Smart Classrooms
-          </div>
+          {[
+            "Smart Classrooms with Digital Learning",
+            "Activity-Based Teaching Approach",
+            "Continuous Student Assessment",
+          ].map((method) => (
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            Practical Learning
-          </div>
+            <div
+              key={method}
+              className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-lg transition"
+            >
+              {method}
+            </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            Activity-Based Education
-          </div>
+          ))}
 
         </div>
 
       </section>
 
 
-      {/* Admission CTA */}
-      <section className="bg-blue-600 text-white text-center py-16">
+      {/* Co-Curricular Activities */}
+      <section className="bg-gray-50 py-14">
 
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          Co-Curricular Activities
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-4">
+
+          {[
+            "Sports & Games",
+            "Cultural Activities",
+            "Drawing & Painting",
+            "Science Projects",
+            "Quiz Competitions",
+            "Music & Dance",
+            "Yoga Training",
+            "School Events",
+          ].map((activity) => (
+
+            <div
+              key={activity}
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition"
+            >
+              {activity}
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+      {/* Evaluation System */}
+      <section className="max-w-6xl mx-auto py-14 px-4 md:px-6">
+
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          Student Evaluation System
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 text-center">
+
+          {[
+            "Weekly Class Tests",
+            "Monthly Progress Reports",
+            "Parent-Teacher Meetings",
+          ].map((evaluation) => (
+
+            <div
+              key={evaluation}
+              className="bg-blue-100 rounded-xl p-6 font-semibold hover:bg-blue-200 transition"
+            >
+              {evaluation}
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+      {/* CTA Section */}
+      <section className="bg-blue-700 text-white text-center py-14 px-4">
+
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Admissions Open 2026–27
         </h2>
 
         <p className="mb-6">
-          Join our academic excellence journey today.
+          Give your child the best learning environment at Orchids High School.
         </p>
 
-        <button className="bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+        <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
           Apply Now
         </button>
 

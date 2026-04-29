@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { Facebook, Instagram, Mail, MapPin } from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -14,37 +12,37 @@ function Footer() {
       {/* Top Footer */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        {/* College Info */}
+        {/* School Info */}
         <div>
 
           <h3 className="text-lg md:text-xl font-bold mb-3">
-            Sadana Junior College
+            Orchids High School
           </h3>
 
           <p className="text-gray-300 text-sm leading-relaxed">
-            Providing quality Intermediate education with integrated coaching
-            for IIT-JEE, NEET & EAMCET.
+            Providing quality education with strong academic foundation,
+            discipline, creativity, and holistic student development.
           </p>
 
         </div>
 
 
-        {/* Streams Offered */}
+        {/* Classes Offered */}
         <div>
 
           <h4 className="font-semibold mb-3">
-            Streams Offered
+            Classes Offered
           </h4>
 
           <div className="flex flex-col space-y-2 text-gray-300 text-sm">
 
-            <span>MPC – Engineering Track</span>
+            <span>Pre-Primary</span>
 
-            <span>BiPC – Medical Track</span>
+            <span>Primary School (1–5)</span>
 
-            <span>MEC – Commerce Track</span>
+            <span>Upper Primary (6–8)</span>
 
-            <span>CEC – Civils & Law Track</span>
+            <span>High School (9–10)</span>
 
           </div>
 
@@ -65,7 +63,7 @@ function Footer() {
             <p>📞 +91 9876543210</p>
 
             <p className="break-words">
-              📧 sadanajuniorcollege@gmail.com
+              📧 orchidshighschool@gmail.com
             </p>
 
           </div>
@@ -96,17 +94,8 @@ function Footer() {
           <FaInstagram size={20} />
         </a>
 
-        {/* <a
-          href="https://youtube.com"
-          target="_blank"
-          rel="noreferrer"
-          className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
-        >
-          <FaYoutube size={20} />
-        </a> */}
-
         <a
-          href="mailto:sadanajuniorcollege@gmail.com"
+          href="mailto:orchidshighschool@gmail.com"
           className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 transition"
         >
           <FaEnvelope size={20} />
@@ -132,11 +121,11 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 pt-4 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm gap-2">
 
         <p className="text-center md:text-left">
-          © {new Date().getFullYear()} Sadana Junior College. All rights reserved.
+          © {new Date().getFullYear()} Orchids High School. All rights reserved.
         </p>
 
         <p className="text-center md:text-right">
-          Designed for Excellence 🎓
+          Designed for Academic Excellence 🎓
         </p>
 
       </div>
